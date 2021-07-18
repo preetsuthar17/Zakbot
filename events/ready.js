@@ -6,5 +6,5 @@ client.on("ready", () => {
   console.log(
     chalk.bgWhite.red(`✅ Successfully logged on as ${client.user.username}`)
   );
-  client.user.setActivity(`${config.prefix}help`);
+  client.user.setActivity(`${config.prefix}help | v3.0`);
 });

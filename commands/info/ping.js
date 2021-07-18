@@ -4,7 +4,7 @@ module.exports = {
   name: "ping",
   category: "info",
   description: "Get bot's rel time ping status",
-  usage: "ping",
+  usage: "zak ping",
   emoji: "🏓",
 
   run: async (client, message, args) => {

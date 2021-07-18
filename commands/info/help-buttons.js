@@ -1,13 +1,13 @@
 const { MessageEmbed, Message, Client } = require("discord.js");
 const { readdirSync } = require("fs");
 const prefix = require("../../config.json").prefix;
-let color = "#36393f";
+let color = "#303136";
 const { button_pagination } = require("djs-helper-v13");
 
 module.exports = {
-  name: "help-buttons",
-  aliases: ["hb"],
-  emoji: "🚑",
+  name: "helpbtn",
+  usage: "zak helpbtn",
+  emoji: "🆘",
   description: "Shows all available bot commands, In button form.",
   /**
    *
@@ -109,12 +109,12 @@ module.exports = {
           "Command:",
           command.name ? `\`${command.name}\`` : "No name for this command."
         )
-        .addField(
-          "Aliases:",
-          command.aliases
-            ? `\`${command.aliases.join("` `")}\``
-            : "No aliases for this command."
-        )
+        // .addField(
+        //   "Aliases:",
+        //   command.aliases
+        //     ? `\`${command.aliases.join("` `")}\``
+        //     : "No aliases for this command."
+        // )
         .addField(
           "Usage:",
           command.usage

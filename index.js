@@ -1,6 +1,11 @@
 const config = require("./config.json");
 const { Client, Collection } = require("discord.js");
 const discord = require("discord.js");
+
+const { glob } = require("glob");
+const { promisify } = require("util");
+const globPromise = promisify(glob);
+
 const chalk = require("chalk");
 const client = new Client({
   intents: [
@@ -15,10 +20,13 @@ const client = new Client({
 const fs = require("fs");
 
 module.exports = client;
+
+// global variables
+
 client.commands = new discord.Collection();
+client.slashCommands = new Collection();
 
 // command handler
-
 let folders = fs.readdirSync("./commands/");
 
 folders.forEach((dir) => {
@@ -31,7 +39,7 @@ folders.forEach((dir) => {
 
     client.commands.set(command.name, command);
 
-    console.log(chalk.green(`${command.name} Loaded Successfullly [COMMAND]`));
+    console.log(chalk.green(`${command.name} Loaded Successfully [COMMAND]`));
   }
 });
 
@@ -47,7 +55,7 @@ eventFolder.forEach((dir) => {
   for (const file of eventFiles) {
     const Event = require(`./events/${file}`);
     const eventNames = file.split(".")[0];
-    console.log(chalk.yellow(`${eventNames} Loaded Successfullly [EVENT]`));
+    console.log(chalk.yellow(`${eventNames} Loaded Successfully [EVENT]`));
   }
 });
 

@@ -1,51 +1,75 @@
-# Discord.JS v13 Command Handler!
+# Zakbot
 
-Simple command handler for discord.js v13 which is really easy to setup & Higly inspired by reconlx!
-<br>
+Zak is upgraded version of [Vinlybot](https://github.com/pritudev/vinlybot). zak is made with ♥ With JavaScript by [@pritudev](https://github.com/pritudev)
 
 ### Support Us Please
 
-![Star](https://i.imgur.com/FR2CpVQ.png)
-![Fork](https://i.imgur.com/tVOUWa9.png)
-<br>
+| Star                                     | Fork                                     |
+| ---------------------------------------- | ---------------------------------------- |
+| ![Star](https://i.imgur.com/41nhvJ1.png) | ![Fork](https://i.imgur.com/MOtHDPV.png) |
 
-**NOTE:** This Command handler is inspired by [@reconlx](https://github.com/reconlx) check him out he code cool stuff and he also make youtube tutorials related discord.js
+# Setup
 
-## Setup
+To setup this bot just follow below steps
 
-Once you open this handler in your code editor then open terminal and run below command.
+### Step 1
+
+Create a new File named `config.json` and put below stuff in that file,
+
+```config
+{
+  "token": "our bot token",
+  "prefix": "zak ",
+  "ownerID": "741549223127941170",
+  "color": "#303136"
+}
+
+```
+
+### Step 1
+
+Go to config.json and put your information just like [token](https://discord.com/developers/applications), bot's prefix, Your ID.
+
+### Step 3
+
+Open terminal in your code editor and run this command
 
 ```bash
 npm install
 ```
 
-Once you run this command then all packages will be installed in your project after go to `config.json` file
-and fill the information like Owner ID, Your discord bot token, Your discord bot prefix!
-
-next once you done then save the file open terminal and run below command,
+after running this command if you still get `cannot find module <module name>` then run
 
 ```bash
-node .
+npm i <module_name>
 ```
 
-and then next you'll see something like this,
-<br>
-![bot started](https://i.imgur.com/2L30wUi.png)
-<br>
-And yah you are done!
+just put name of module which is missing.
+and after these steps if you get error then join [support server](#Support)
+And yeah you are done once the bot come online you'll see something like this,
 
-## Support
+![Online](https://cdn.discordapp.com/attachments/861465285986353172/866233566421057626/unknown.png)
 
-Feel free to join our discord server if you get any error and else. -> *https://discord.gg/DXyczwxQYf*
-<a href="https://www.discord.io/prituhq">
-<img src="https://i.imgur.com/x4jN0XM.png">
-</a>
+## Contributing
 
-## Authors
+Steps to contribute:
 
-- [@pritulx](https://www.github.com/pritulx)
-- [@reconlx](https://github.com/reconlx) This is inspired by him.
+![Contirbute](https://i.imgur.com/qN2RoJF.png)
 
-## Show your support
+That's it Thanks for contributing!
 
-Give a ⭐️ if this project helped you!
+# License
+
+[MIT License](https://choosealicense.com/licenses/mit/)
+
+# Support
+
+For support, email contact.pritulx@gmail.com or join our [discord support server](https://discord.gg/DXyczwxQYf).
+
+|                                                                        pritu HQ                                                                         |                                                                                                 ❤️ Developer                                                                                                  |
+| :-----------------------------------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+| [![Sponsor-Image](https://cdn.discordapp.com/icons/856501506093875220/a_74268581d5b67fe744052e0c4d5674e2.gif?size=1024)](https://www.youtube.com/pritu) | The Discord Channel, subscribe for Discord.js related tutorials videos and join [support server](https://discord.io/prituhhq) for any kind of help. Click [here](https://www.youtube.com/pritu) to subscribe! |
+
+# Authors
+
+- [@pritu](https://www.github.com/pritu)

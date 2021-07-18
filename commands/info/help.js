@@ -4,7 +4,7 @@ const color = require("../../config.json").color;
 const prefix = require("../../config.json").prefix;
 module.exports = {
   name: "help",
-  aliases: ["h"],
+  usage: "zak help",
   emoji: "ℹ",
   description: "Shows all available bot commands.",
   /**
@@ -27,6 +27,7 @@ module.exports = {
         info: "❓",
         moderation: "⚒️",
         utility: "⚙️",
+        owner: "👑",
         tutorial: "📚",
       };
 
@@ -109,11 +110,10 @@ module.exports = {
 
       // console.log(cots);
 
-      const command =
-        client.commands.get(args[0].toLowerCase()) ||
-        client.commands.find(
-          (c) => c.aliases && c.aliases.includes(args[0].toLowerCase())
-        );
+      const command = client.commands.get(args[0].toLowerCase()); // ||
+      // client.commands.find(
+      //   (c) => c.aliases && c.aliases.includes(args[0].toLowerCase())
+      // );
 
       if (cots.includes(args[0].toLowerCase())) {
         const combed = new MessageEmbed()
@@ -146,16 +146,16 @@ module.exports = {
           "Command:",
           command.name ? `\`${command.name}\`` : "No name for this command."
         )
-        .addField(
-          "Aliases:",
-          command.aliases
-            ? `\`${command.aliases.join("` `")}\``
-            : "No aliases for this command."
-        )
+        // .addField(
+        //   "Aliases:",
+        //   command.aliases
+        //     ? `\`${command.aliases.join("` `")}\``
+        //     : "No aliases for this command."
+        // )
         .addField(
           "Usage:",
           command.usage
-            ? `\`${prefix}${command.name} ${command.usage}\``
+            ? `\`${command.usage}\``
             : `\`${prefix}${command.name}\``
         )
         .addField(
