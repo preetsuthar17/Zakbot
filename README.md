@@ -48,7 +48,7 @@ just put name of module which is missing.
 and after these steps if you get error then join [support server](#Support)
 And yeah you are done once the bot come online you'll see something like this,
 
-![Online](https://cdn.discordapp.com/attachments/861465285986353172/866233566421057626/unknown.png)
+![Online](https://cdn.discordapp.com/attachments/861555095782293504/866235494004949022/unknown.png)
 
 ## Contributing
 
